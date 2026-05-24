@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>References | EcoSphere</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="media/logo.jpg" type="image/x-icon">
+
+    <style>
+        /* --- BRANDING & DESIGN THEME INTEGRATION --- */
+        :root {
+            --primary-blue-grey: #475569;
+            --dark-blue-grey: #334155;
+            --dark-blue: #0f172a;
+            --soft-bg: #f8fafc;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            background-color: #fafbfc;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Page Header Custom Styling */
+        .page-header {
+            background: linear-gradient(145deg, #ffffff, #f1f5f9);
+            border: 1px solid var(--border-color);
+            border-radius: 2rem;
+            padding: 4rem 2rem;
+            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.04);
+        }
+
+        /* Bibliography Content Area Card Layouts */
+        .ref-card-wrapper {
+            border-radius: 2.5rem !important;
+            box-shadow: 0 20px 50px rgba(15, 23, 42, 0.04) !important;
+            border: 1px solid var(--border-color);
+            background: #ffffff;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .ref-list-item {
+            display: flex;
+            align-items: center;
+            padding: 1.25rem 1.75rem;
+            border-bottom: 1px solid var(--border-color);
+            text-decoration: none;
+            color: var(--dark-blue-grey);
+            transition: all 0.2s ease;
+        }
+
+        .ref-list-item:last-child {
+            border-bottom: none;
+        }
+
+        /* Standard Research Hover Accent */
+        .research-group .ref-list-item:hover {
+            background-color: var(--soft-bg);
+            color: var(--dark-blue);
+            padding-left: 2.25rem;
+        }
+
+        /* --- UPDATED IMAGE REFERENCES HOVER ACCENT --- */
+        .image-group .ref-list-item:hover {
+            background-color: #f1f5f9; /* Clean slate grey-blue background tint */
+            color: var(--dark-blue);
+            padding-left: 2.25rem;
+        }
+
+        .ref-icon-box {
+            width: 45px;
+            height: 45px;
+            background: rgba(71, 85, 105, 0.06);
+            color: var(--primary-blue-grey);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .ref-list-item:hover .ref-icon-box {
+            background: var(--primary-blue-grey);
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        .text-truncate-custom {
+            max-width: 85%;
+            display: inline-block;
+            vertical-align: middle;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- --- START NAVBAR --- -->
+<div class="container mt-3 nav-wrapper">
+    <nav class="navbar navbar-expand-lg custom-nav">
+        <div class="container-fluid">
+
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="media/logo.jpg" class="rounded-logo" alt="Logo">
+                <span class="brand-name">EcoSphere</span>
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="desktopMenu">
+                <ul class="navbar-nav ms-auto align-items-center gap-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="map.html">Pollution Map</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           role="button"
+                           data-bs-toggle="dropdown">
+                             Discovery
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="causes.html">Causes</a></li>
+                            <li><a class="dropdown-item" href="prevention.html">Prevention</a></li>
+                            <li><a class="dropdown-item" href="affects.html">Affects</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- Mobile Offcanvas Menu -->
+<div class="offcanvas offcanvas-end"
+     data-bs-scroll="true"
+     tabindex="-1"
+     id="mobileMenu"
+     aria-labelledby="mobileMenuLabel">
+
+    <div class="offcanvas-header">
+        <div class="d-flex align-items-center gap-2">
+            <img src="media/logo.jpg" class="rounded-logo" style="width:42px;height:42px;" alt="Logo">
+            <h5 class="offcanvas-title text-white mb-0" id="mobileMenuLabel">EcoSphere</h5>
+        </div>
+        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+        <ul class="navbar-nav gap-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="map.html">Pollution Map</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Discovery</a>
+                <ul class="dropdown-menu border-0 bg-transparent">
+                    <li><a class="dropdown-item text-white-50" href="causes.html">Causes</a></li>
+                    <li><a class="dropdown-item text-white-50" href="prevention.html">Prevention</a></li>
+                    <li><a class="dropdown-item text-white-50" href="affects.html">Affects</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</div>
+<!-- --- END NAVBAR --- -->
+
+
+<!-- --- START MAIN CONTENT AREA --- -->
+<main class="container my-5">
+    
+    <!-- Header Box -->
+    <div class="page-header text-center mb-5">
+        <h1 class="display-4 fw-bold tracking-tight mb-2" style="color: var(--dark-blue); font-weight: 800;">
+            Project <span style="color: var(--primary-blue-grey);">References</span>
+        </h1>
+        <p class="lead text-muted mx-auto mb-0" style="max-width: 650px;">
+            A compilation of database catalogs, scientific literature, monitoring portals, and visual assets used to assemble our Smart City Air Quality Dashboard.
+        </p>
+    </div>
+
+    <div class="row g-5">
+        <!-- Left: Literature & Data Logs -->
+        <div class="col-lg-6">
+            <div class="p-4 p-md-5 bg-white ref-card-wrapper research-group">
+                <h4 class="fw-bold mb-4 d-flex align-items-center" style="color: var(--dark-blue);">
+                    <i class="fa-solid fa-book-open text-secondary me-3"></i> Research & Data
+                </h4>
+                
+                <div class="d-flex flex-column">
+                    <a href="https://www.cdc.gov/air-quality/about/?CDC_AAref_Val=https://www.cdc.gov/air/default.html" target="_blank" class="ref-list-item">
+                        <div class="ref-icon-box me-3"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                        <div class="text-truncate-custom">CDC — Air Quality Overview Portal</div>
+                    </a>
+
+                    <a href="https://sdgs.un.org/goals/goal11" target="_blank" class="ref-list-item">
+                        <div class="ref-icon-box me-3"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                        <div class="text-truncate-custom">UN SDGs — Goal 11: Sustainable Cities</div>
+                    </a>
+
+                    <a href="https://www.who.int/myanmar/health-topics/air-pollution?" target="_blank" class="ref-list-item">
+                        <div class="ref-icon-box me-3"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                        <div class="text-truncate-custom">WHO Myanmar — Air Quality & Public Health</div>
+                    </a>
+
+                    <a href="https://www.who.int/health-topics/air-pollution?" target="_blank" class="ref-list-item">
+                        <div class="ref-icon-box me-3"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                        <div class="text-truncate-custom">WHO Global — Pollution Guidelines</div>
+                    </a>
+
+                    <a href="https://www.who.int/data/gho/data/themes/air-pollution?" target="_blank" class="ref-list-item">
+                        <div class="ref-icon-box me-3"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                        <div class="text-truncate-custom">WHO Global Health Observatory Tracker</div>
+                    </a>
+
+                    <a href="https://elevenmyanmar.com/news/yangons-air-pollution-reaches-red-level-ranked-5th-worst-globally-iq" target="_blank" class="ref-list-item">
+                        <div class="ref-icon-box me-3"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                        <div class="text-truncate-custom">Eleven Myanmar — Yangon Regional Warning Report</div>
+                    </a>
+
+                    <a href="https://aqicn.org/city/yangon/" target="_blank" class="ref-list-item">
+                        <div class="ref-icon-box me-3"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+                        <div class="text-truncate-custom">AQICN — Yangon Live Real-Time Air Quality Feed</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Image Asset Logs -->
+        <div class="col-lg-6">
+            <div class="p-4 p-md-5 bg-white ref-card-wrapper image-group">
+                <h4 class="fw-bold mb-4 d-flex align-items-center" style="color: var(--dark-blue);">
+                    <i class="fa-solid fa-image text-secondary me-3"></i> Image References
+                </h4>
+                
+                <div class="d-flex flex-column">
+                    <!-- Web Image Assets -->
+                    <a href="https://i.pinimg.com/1200x/40/6d/18/406d18f065f98b0c9bb3a1fd49a141c7.jpg" target="_blank" class="ref-list-item">
+                        <div class="ref-icon-box me-3"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+                        <div class="text-truncate-custom">Pinterest Assets — Yangon Air Cover Hero</div>
+                    </a>
+
+                    <a href="https://i.pinimg.com/736x/9d/23/55/9d2355f729221bd4317bb6b4ae7e2ec8.jpg" target="_blank" class="ref-list-item">
+                        <div class="ref-icon-box me-3"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+                        <div class="text-truncate-custom">Pinterest Assets — Atmospheric Layer Display</div>
+                    </a>
+
+                    <a href="https://i.pinimg.com/1200x/19/f7/8b/19f78b2d3ed5fb61cfef867ca68b7f8b.jpg" target="_blank" class="ref-list-item">
+                        <div class="ref-icon-box me-3"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+                        <div class="text-truncate-custom">Pinterest Assets — Respiratory Health Graphic</div>
+                    </a>
+
+                    <!-- Local Files Storage Links -->
+                    <a href="file:///Users/thirihaymann/Downloads/Air%20Pollution%202/media/cars.jpg" target="_blank" class="ref-list-item bg-light bg-opacity-50">
+                        <div class="ref-icon-box me-3"><i class="fa-solid fa-file-image"></i></div>
+                        <div class="text-truncate-custom text-muted small">Local Storage: cars.jpg</div>
+                    </a>
+
+                    <a href="file:///Users/thirihaymann/Downloads/Air%20Pollution%202/media/yangon%20air%20pollution.jpg" target="_blank" class="ref-list-item bg-light bg-opacity-50">
+                        <div class="ref-icon-box me-3"><i class="fa-solid fa-file-image"></i></div>
+                        <div class="text-truncate-custom text-muted small">Local Storage: yangon air pollution.jpg</div>
+                    </a>
+
+                    <a href="file:///Users/thirihaymann/Downloads/Air%20Pollution%202/media/photo_2026-05-14_01-42-00.jpg" target="_blank" class="ref-list-item bg-light bg-opacity-50">
+                        <div class="ref-icon-box me-3"><i class="fa-solid fa-file-image"></i></div>
+                        <div class="text-truncate-custom text-muted small">Local Storage: photo_2026-05-14_01-42-00.jpg</div>
+                    </a>
+
+                    <a href="file:///Users/thirihaymann/Downloads/Air%20Pollution%202/media/Hledan%20Street.jpg" target="_blank" class="ref-list-item bg-light bg-opacity-50">
+                        <div class="ref-icon-box me-3"><i class="fa-solid fa-file-image"></i></div>
+                        <div class="text-truncate-custom text-muted small">Local Storage: Hledan Street.jpg</div>
+                    </a>
+
+                    <a href="file:///Users/thirihaymann/Downloads/Air%20Pollution%202/media/photo_2026-05-14_01-45-28.jpg" target="_blank" class="ref-list-item bg-light bg-opacity-50">
+                        <div class="ref-icon-box me-3"><i class="fa-solid fa-file-image"></i></div>
+                        <div class="text-truncate-custom text-muted small">Local Storage: photo_2026-05-14_01-45-28.jpg</div>
+                    </a>
+
+                    <a href="file:///Users/thirihaymann/Downloads/Air%20Pollution%202/media/wlcm%20to%20yangon.jpg" target="_blank" class="ref-list-item bg-light bg-opacity-50">
+                        <div class="ref-icon-box me-3"><i class="fa-solid fa-file-image"></i></div>
+                        <div class="text-truncate-custom text-muted small">Local Storage: wlcm to yangon.jpg</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<!-- --- END MAIN CONTENT AREA --- -->
+
+
+<!-- --- START FOOTER --- -->
+<footer id="footer" class="custom-footer mt-5">
+    <div class="container">
+        <div class="row gy-4">
+            
+            <div class="col-lg-4 col-md-12 text-center text-lg-start">
+                <a class="navbar-brand d-block mb-3" href="index.html">
+                    <img src="media/logo.jpg" class="rounded-logo border border-light border-opacity-25" style="width: 50px; height: 50px;">
+                    <span class="ms-2 fw-bold text-white">EcoSphere</span>
+                </a>
+                <p class="small opacity-75 pe-lg-5">
+                    Providing Yangon residents with accessible air quality information to encourage environmental awareness, healthier living, and sustainable urban development.
+                </p>
+                <div class="footer-socials d-flex gap-3 justify-content-center justify-content-lg-start mt-3">
+                    <a href="https://www.facebook.com/share/181xZYCWML/?mibextid=wwXIfr" class="text-white opacity-75"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@greenwaveprojectpbl?_r=1&_t=ZS-96brNTNGCgf" class="text-white opacity-75"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://web.telegram.org/k/" class="text-white opacity-75"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-2 offset-lg-1">
+                <h6 class="fw-bold mb-3 text-uppercase small">Explore</h6>
+                <ul class="list-unstyled small opacity-75">
+                    <li class="mb-2"><a href="index.html" class="text-decoration-none text-white">Home</a></li>
+                    <li class="mb-2"><a href="about.html" class="text-decoration-none text-white">About Us</a></li>
+                    <li class="mb-2"><a href="prevention.html" class="text-decoration-none text-white">Prevention</a></li>
+                    <li class="mb-2"><a href="affects.html" class="text-decoration-none text-white">Affects</a></li>
+                    <li class="mb-2"><a href="causes.html" class="text-decoration-none text-white">Causes</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-lg-2">
+                <h6 class="fw-bold mb-3 text-uppercase small">Resources</h6>
+                <ul class="list-unstyled small opacity-75">
+                    <li class="mb-2"><a href="faqs.html" class="text-decoration-none text-white">FAQs</a></li>
+                    <li class="mb-2"><a href="map.html" class="text-decoration-none text-white">Zoning Data</a></li>
+                    <li class="mb-2"><a href="privacy.html" class="text-decoration-none text-white">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12">
+                <h6 class="fw-bold mb-3 text-uppercase small">Stay Updated</h6>
+                <p class="small opacity-75">Get alerts about air quality changes in Yangon.</p>
+                <form action="contact.html" method="GET">
+                    <div class="input-group mb-3">
+                        <input type="email" name="userEmail" class="form-control form-control-sm bg-transparent border-light border-opacity-25 text-white" placeholder="Enter email address" required>
+                        <button class="btn btn-outline-light btn-sm" type="submit">Join</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="citation-container">
+           <a href="https://edusn-my.sharepoint.com/:w:/g/personal/thirihaymann_edusnschool_co_uk/IQCx-lve096ISLrrx7c4MkwNATe3js4er93nj6ka3yqateQ?e=VedTvq" target="_blank" class="btn-citation view-btn">
+                View Citation
+            </a>
+        </div>
+
+        <hr class="my-5 border-light border-opacity-10">
+
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="small mb-0 opacity-50">© 2026 Smart City Air Quality Project. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="small mb-0 opacity-50">Built by <span class="fw-bold">EcoSphere Development Team</span></p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<!-- --- END FOOTER --- -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
