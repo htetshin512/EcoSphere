@@ -12,7 +12,6 @@
     <link rel="shortcut icon" href="media/logo.jpg" type="image/x-icon">
 
     <style>
-        /* --- BRANDING & DESIGN THEME INTEGRATION --- */
         :root {
             --primary-blue-grey: #475569;
             --dark-blue-grey: #334155;
@@ -27,7 +26,6 @@
             overflow-x: hidden;
         }
 
-        /* Page Header Custom Styling */
         .page-header {
             background: linear-gradient(145deg, #ffffff, #f1f5f9);
             border: 1px solid var(--border-color);
@@ -36,7 +34,6 @@
             box-shadow: 0 20px 40px rgba(15, 23, 42, 0.04);
         }
 
-        /* Bibliography Content Area Card Layouts */
         .ref-card-wrapper {
             border-radius: 2.5rem !important;
             box-shadow: 0 20px 50px rgba(15, 23, 42, 0.04) !important;
@@ -60,16 +57,14 @@
             border-bottom: none;
         }
 
-        /* Standard Research Hover Accent */
         .research-group .ref-list-item:hover {
             background-color: var(--soft-bg);
             color: var(--dark-blue);
             padding-left: 2.25rem;
         }
 
-        /* --- UPDATED IMAGE REFERENCES HOVER ACCENT --- */
         .image-group .ref-list-item:hover {
-            background-color: #f1f5f9; /* Clean slate grey-blue background tint */
+            background-color: #f1f5f9;
             color: var(--dark-blue);
             padding-left: 2.25rem;
         }
@@ -107,7 +102,6 @@
 
 <body>
 
-<!-- --- START NAVBAR --- -->
 <div class="container mt-3 nav-wrapper">
     <nav class="navbar navbar-expand-lg custom-nav">
         <div class="container-fluid">
@@ -164,7 +158,6 @@
     </nav>
 </div>
 
-<!-- Mobile Offcanvas Menu -->
 <div class="offcanvas offcanvas-end"
      data-bs-scroll="true"
      tabindex="-1"
@@ -196,13 +189,9 @@
         </ul>
     </div>
 </div>
-<!-- --- END NAVBAR --- -->
 
-
-<!-- --- START MAIN CONTENT AREA --- -->
 <main class="container my-5">
     
-    <!-- Header Box -->
     <div class="page-header text-center mb-5">
         <h1 class="display-4 fw-bold tracking-tight mb-2" style="color: var(--dark-blue); font-weight: 800;">
             Project <span style="color: var(--primary-blue-grey);">References</span>
@@ -213,7 +202,6 @@
     </div>
 
     <div class="row g-5">
-        <!-- Left: Literature & Data Logs -->
         <div class="col-lg-6">
             <div class="p-4 p-md-5 bg-white ref-card-wrapper research-group">
                 <h4 class="fw-bold mb-4 d-flex align-items-center" style="color: var(--dark-blue);">
@@ -259,7 +247,6 @@
             </div>
         </div>
 
-        <!-- Right: Image Asset Logs -->
         <div class="col-lg-6">
             <div class="p-4 p-md-5 bg-white ref-card-wrapper image-group">
                 <h4 class="fw-bold mb-4 d-flex align-items-center" style="color: var(--dark-blue);">
@@ -267,7 +254,6 @@
                 </h4>
                 
                 <div class="d-flex flex-column">
-                    <!-- Web Image Assets -->
                     <a href="https://i.pinimg.com/1200x/40/6d/18/406d18f065f98b0c9bb3a1fd49a141c7.jpg" target="_blank" class="ref-list-item">
                         <div class="ref-icon-box me-3"><i class="fa-solid fa-cloud-arrow-down"></i></div>
                         <div class="text-truncate-custom">Pinterest Assets — Yangon Air Cover Hero</div>
@@ -283,7 +269,6 @@
                         <div class="text-truncate-custom">Pinterest Assets — Respiratory Health Graphic</div>
                     </a>
 
-                    <!-- Local Files Storage Links -->
                     <a href="file:///Users/thirihaymann/Downloads/Air%20Pollution%202/media/cars.jpg" target="_blank" class="ref-list-item bg-light bg-opacity-50">
                         <div class="ref-icon-box me-3"><i class="fa-solid fa-file-image"></i></div>
                         <div class="text-truncate-custom text-muted small">Local Storage: cars.jpg</div>
@@ -319,10 +304,7 @@
     </div>
 
 </main>
-<!-- --- END MAIN CONTENT AREA --- -->
 
-
-<!-- --- START FOOTER --- -->
 <footer id="footer" class="custom-footer mt-5">
     <div class="container">
         <div class="row gy-4">
@@ -394,7 +376,6 @@
 
     </div>
 </footer>
-<!-- --- END FOOTER --- -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
