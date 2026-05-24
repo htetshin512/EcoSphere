@@ -389,7 +389,7 @@ section{
 }
 
 .custom-footer a:hover {
-  color: #8fd19e !important;
+  color: #235eb6 !important;
   opacity: 1 !important;
   transform: translateX(3px);
 }
@@ -410,7 +410,7 @@ section{
 }
 
 .footer-socials a:hover {
-  background: #198754;
+  background: #070c368f;
   color: white !important;
   transform: translateY(-3px);
 }
@@ -431,7 +431,7 @@ section{
 .custom-footer input.form-control:focus {
   background: rgba(255,255,255,0.05);
   color: white !important;
-  border-color: #198754;
+  border-color: #112770;
   box-shadow: none;
 }
 
@@ -444,8 +444,8 @@ section{
 }
 
 .custom-footer .btn-outline-light:hover {
-  background: #198754;
-  border-color: #198754;
+  background: #0321357a;
+  border-color: #061f3b;
   color: white;
 }
 
