@@ -12,13 +12,11 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        /* Smooth Scrolling for Link Anchors */
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 110px; /* Offset spacing so section titles aren't hidden by nav headers */
+            scroll-padding-top: 110px;
         }
 
-        /* Solution Sidebar Spy Hover Styling */
         .solution-spy .list-group-item {
             border: none;
             padding: 0.75rem 1.25rem;
@@ -40,7 +38,6 @@
             font-weight: 600;
         }
 
-        /* Image hover zooms */
         .solution-image {
             height: 320px;
             object-fit: cover;
@@ -50,7 +47,6 @@
             transform: scale(1.03);
         }
 
-        /* Interactive Card tweaks */
         .solution-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -59,7 +55,6 @@
             box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.1) !important;
         }
 
-        /* Mini feature item box interactions */
         .mini-box {
             background: #f8fafc;
             border-radius: 16px;
@@ -74,7 +69,6 @@
             border-color: #e2e8f0;
         }
 
-        /* Custom Button Override */
         .btn-dark-green {
             background-color: #198754;
             color: white;
@@ -95,169 +89,80 @@
 <div class="container mt-3 nav-wrapper">
     <nav class="navbar navbar-expand-lg custom-nav">
         <div class="container-fluid">
-
             <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
                 <img src="media/logo.jpg" class="rounded-logo" alt="Logo">
                 <span class="brand-name fw-bold">EcoSphere</span>
             </a>
 
-            <button class="navbar-toggler border-0 shadow-none"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#mobileMenu">
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="desktopMenu">
                 <ul class="navbar-nav ms-auto align-items-center gap-3">
-
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="map.html">Pollution Map</a>
                     </li>
-
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active"
-                           href="#"
-                           role="button"
-                           data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
                             Discovery
                         </a>
-
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="causes.html">Causes</a></li>
                             <li><a class="dropdown-item" href="prevention.html">Prevention</a></li>
                             <li><a class="dropdown-item" href="affects.html">Affects</a></li>
                         </ul>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About Us</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
-
                 </ul>
             </div>
         </div>
     </nav>
 </div>
 
-<div class="offcanvas offcanvas-end"
-     data-bs-scroll="true"
-     tabindex="-1"
-     id="mobileMenu"
-     aria-labelledby="mobileMenuLabel">
-
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
     <div class="offcanvas-header">
-
         <div class="d-flex align-items-center gap-2">
-
-            <img src="media/logo.jpg"
-                 class="rounded-logo"
-                 style="width:42px;height:42px;"
-                 alt="Logo">
-
-            <h5 class="offcanvas-title text-white mb-0"
-                id="mobileMenuLabel">
-
-                EcoSphere
-
-            </h5>
-
+            <img src="media/logo.jpg" class="rounded-logo" style="width:42px;height:42px;" alt="Logo">
+            <h5 class="offcanvas-title text-white mb-0" id="mobileMenuLabel">EcoSphere</h5>
         </div>
-
-        <button type="button"
-                class="btn-close btn-close-white shadow-none"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close">
-        </button>
-
+        <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
 
     <div class="offcanvas-body">
-
         <ul class="navbar-nav gap-2">
-
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    Home
-                </a>
+                <a class="nav-link" href="index.html">Home</a>
             </li>
-
             <li class="nav-item">
-                <a class="nav-link" href="map.html">
-                    Pollution Map
-                </a>
+                <a class="nav-link" href="map.html">Pollution Map</a>
             </li>
-
             <li class="nav-item dropdown">
-
-                <a class="nav-link dropdown-toggle"
-                   href="#"
-                   role="button"
-                   data-bs-toggle="dropdown"
-                   data-bs-display="static"
-                   aria-expanded="false">
-
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
                     Discovery
-
                 </a>
-
                 <ul class="dropdown-menu border-0 bg-transparent">
-
-                    <li>
-                        <a class="dropdown-item text-white-50"
-                           href="causes.html">
-
-                           Causes
-
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="dropdown-item text-white-50"
-                           href="prevention.html">
-
-                           Prevention
-
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="dropdown-item text-white-50"
-                           href="affects.html">
-
-                           Affects
-
-                        </a>
-                    </li>
-
+                    <li><a class="dropdown-item text-white-50" href="causes.html">Causes</a></li>
+                    <li><a class="dropdown-item text-white-50" href="prevention.html">Prevention</a></li>
+                    <li><a class="dropdown-item text-white-50" href="affects.html">Affects</a></li>
                 </ul>
-
             </li>
-
             <li class="nav-item">
-                <a class="nav-link" href="about.html">
-                    About Us
-                </a>
+                <a class="nav-link" href="about.html">About Us</a>
             </li>
-
             <li class="nav-item">
-                <a class="nav-link" href="contact.html">
-                    Contact Us
-                </a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
-
         </ul>
-
     </div>
-
 </div>
 
 <section class="container py-5 mt-4 fade-in-up">
@@ -293,10 +198,9 @@
         </div>
 
         <div class="col-lg-9">
-
             <section id="transport" class="solution-section mb-5 fade-in-up">
                 <div class="card solution-card border-0 shadow-lg overflow-hidden">
-                    <img src="media/photo_2026-05-14_01-56-10.jpg" class="card-img-top solution-image">
+                    <img src="media/photo_2026-05-14_01-56-10.jpg" class="card-img-top solution-image" alt="Transport">
 
                     <div class="card-body p-5">
                         <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
@@ -341,7 +245,7 @@
 
             <section id="industry" class="solution-section mb-5">
                 <div class="card solution-card border-0 shadow-lg overflow-hidden">
-                    <img src="media/Hledan Street.jpg" class="card-img-top solution-image">
+                    <img src="media/Hledan Street.jpg" class="card-img-top solution-image" alt="Industry">
 
                     <div class="card-body p-5">
                         <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
@@ -374,7 +278,7 @@
 
             <section id="smart" class="solution-section mb-5">
                 <div class="card solution-card border-0 shadow-lg overflow-hidden">
-                    <img src="media/front view.jpg" class="card-img-top solution-image">
+                    <img src="media/front view.jpg" class="card-img-top solution-image" alt="Smart Technology">
 
                     <div class="card-body p-5">
                         <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
@@ -420,17 +324,14 @@
                             <h2 class="display-5 fw-bold">72%</h2>
                             <p class="small opacity-75">Urban pollution linked to transport systems</p>
                         </div>
-
                         <div class="col-md-3">
                             <h2 class="display-5 fw-bold">48%</h2>
                             <p class="small opacity-75">Air quality improvement possible through regulation</p>
                         </div>
-
                         <div class="col-md-3">
                             <h2 class="display-5 fw-bold">24/7</h2>
                             <p class="small opacity-75">Real-time monitoring capability</p>
                         </div>
-
                         <div class="col-md-3">
                             <h2 class="display-5 fw-bold">2030</h2>
                             <p class="small opacity-75">Future sustainability target</p>
@@ -438,7 +339,6 @@
                     </div>
                 </div>
             </section>
-
         </div>
     </div>
 </section>
@@ -556,168 +456,96 @@
 </div>
 
 <footer id="footer" class="custom-footer mt-5">
-
-<div class="container">
-
-<div class="row gy-4">
-
-<div class="col-lg-4 col-md-12 text-center text-lg-start">
-
-<a class="navbar-brand d-block mb-3" href="index.html">
-
-<img src="media/logo.jpg" class="rounded-logo border border-light border-opacity-25" style="width: 50px; height: 50px;">
-
-<span class="ms-2 fw-bold text-white">EcoSphere</span>
-
-</a>
-
-<p class="small opacity-75 pe-lg-5">
-
-Providing Yangon residents with accessible air quality information to encourage environmental awareness, healthier living, and sustainable urban development.
-
-</p>
-
-<div class="footer-socials d-flex gap-3 justify-content-center justify-content-lg-start mt-3">
-
-<a href="https://www.facebook.com/share/181xZYCWML/?mibextid=wwXIfr" class="text-white opacity-75">
-<i class="fa-brands fa-facebook-f"></i>
-</a>
-
-<a href="https://www.tiktok.com/@greenwaveprojectpbl?_r=1&_t=ZS-96brNTNGCgf" class="text-white opacity-75">
-<i class="fa-brands fa-tiktok"></i>
-</a>
-
-<a href="https://web.telegram.org/k/" class="text-white opacity-75">
-<i class="fa-brands fa-telegram"></i>
-</a>
-
-</div>
-
-</div>
-
-
-
-<div class="col-6 col-lg-2 offset-lg-1">
-
-<h6 class="fw-bold mb-3 text-uppercase small">Explore</h6>
-
-<ul class="list-unstyled small opacity-75">
-
-<li class="mb-2"><a href="index.html" class="text-decoration-none text-white">Home</a></li>
-
-<li class="mb-2"><a href="about.html" class="text-decoration-none text-white">About Us</a></li>
-
-<li class="mb-2"><a href="prevention.html" class="text-decoration-none text-white">Prevention</a></li>
-
-<li class="mb-2"><a href="affects.html" class="text-decoration-none text-white">Affects</a></li>
-
-<li class="mb-2"><a href="causes.html" class="text-decoration-none text-white">Causes</a></li>
-
-</ul>
-
-</div>
-
-
-
-<div class="col-6 col-lg-2">
-
-<h6 class="fw-bold mb-3 text-uppercase small">Resources</h6>
-
-<ul class="list-unstyled small opacity-75">
-
-<li class="mb-2"><a href="faqs.html" class="text-decoration-none text-white">FAQs</a></li>
-
-<li class="mb-2"><a href="map.html" class="text-decoration-none text-white">Zoning Data</a></li>
-
-<li class="mb-2"><a href="privacy.html" class="text-decoration-none text-white">Privacy Policy</a></li>
-
-</ul>
-
-</div>
-
-
-
-<div class="col-lg-3 col-md-12">
-
-<h6 class="fw-bold mb-3 text-uppercase small">Stay Updated</h6>
-
-<p class="small opacity-75">Get alerts about air quality changes in Yangon.</p>
-
-
-<form action="contact.html" method="GET">
-
-<div class="input-group mb-3">
-
-<input type="email"
-
-name="userEmail"
-
-class="form-control form-control-sm bg-transparent border-light border-opacity-25 text-white"
-
-placeholder="Enter email address"
-
-required>
-
-<button class="btn btn-outline-light btn-sm" type="submit">Join</button>
-
-</div>
-
-</form>
-
-</div>
-
-</div>
-
-<div class="citation-container">
-
-    
-    <a href="citation.html" target="_blank" class="btn-citation view-btn">
-        View Citation
-    </a>
-</div>
-
-<hr class="my-5 border-light border-opacity-10">
-
-
-
-<div class="row align-items-center">
-
-<div class="col-md-6 text-center text-md-start">
-
-<p class="small mb-0 opacity-50">© 2026 Smart City Air Quality Project. All rights reserved.</p>
-
-</div>
-
-<div class="col-md-6 text-center text-md-end">
-
-<p class="small mb-0 opacity-50">Built by <span class="fw-bold">EcoSphere Development Team</span></p>
-
-</div>
-
-</div>
-
-</div>
-
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-lg-4 col-md-12 text-center text-lg-start">
+                <a class="navbar-brand d-block mb-3" href="index.html">
+                    <img src="media/logo.jpg" class="rounded-logo border border-light border-opacity-25" style="width: 50px; height: 50px;" alt="Logo">
+                    <span class="ms-2 fw-bold text-white">EcoSphere</span>
+                </a>
+                <p class="small opacity-75 pe-lg-5">
+                    Providing Yangon residents with accessible air quality information to encourage environmental awareness, healthier living, and sustainable urban development.
+                </p>
+                <div class="footer-socials d-flex gap-3 justify-content-center justify-content-lg-start mt-3">
+                    <a href="https://www.facebook.com/share/181xZYCWML/?mibextid=wwXIfr" class="text-white opacity-75">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@greenwaveprojectpbl?_r=1&_t=ZS-96brNTNGCgf" class="text-white opacity-75">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://web.telegram.org/k/" class="text-white opacity-75">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-2 offset-lg-1">
+                <h6 class="fw-bold mb-3 text-uppercase small">Explore</h6>
+                <ul class="list-unstyled small opacity-75">
+                    <li class="mb-2"><a href="index.html" class="text-decoration-none text-white">Home</a></li>
+                    <li class="mb-2"><a href="about.html" class="text-decoration-none text-white">About Us</a></li>
+                    <li class="mb-2"><a href="prevention.html" class="text-decoration-none text-white">Prevention</a></li>
+                    <li class="mb-2"><a href="affects.html" class="text-decoration-none text-white">Affects</a></li>
+                    <li class="mb-2"><a href="causes.html" class="text-decoration-none text-white">Causes</a></li>
+                </ul>
+            </div>
+
+            <div class="col-6 col-lg-2">
+                <h6 class="fw-bold mb-3 text-uppercase small">Resources</h6>
+                <ul class="list-unstyled small opacity-75">
+                    <li class="mb-2"><a href="faqs.html" class="text-decoration-none text-white">FAQs</a></li>
+                    <li class="mb-2"><a href="map.html" class="text-decoration-none text-white">Zoning Data</a></li>
+                    <li class="mb-2"><a href="privacy.html" class="text-decoration-none text-white">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-12">
+                <h6 class="fw-bold mb-3 text-uppercase small">Stay Updated</h6>
+                <p class="small opacity-75">Get alerts about air quality changes in Yangon.</p>
+                <form action="contact.html" method="GET">
+                    <div class="input-group mb-3">
+                        <input type="email" name="userEmail" class="form-control form-control-sm bg-transparent border-light border-opacity-25 text-white" placeholder="Enter email address" required>
+                        <button class="btn btn-outline-light btn-sm" type="submit">Join</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="citation-container">
+            <a href="citation.html" target="_blank" class="btn-citation view-btn">
+                View Citation
+            </a>
+        </div>
+
+        <hr class="my-5 border-light border-opacity-10">
+
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="small mb-0 opacity-50">© 2026 Smart City Air Quality Project. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="small mb-0 opacity-50">Built by <span class="fw-bold">EcoSphere Development Team</span></p>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    // 1. Initialize Bootstrap tooltips and popovers safely
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
     [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
 
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
     [...popoverTriggerList].map(el => new bootstrap.Popover(el));
 
-    // 2. High-Performance Scroll Tracker (Fixes the sticky highlight bug)
     const spyLinks = document.querySelectorAll('#solutionSpy .list-group-item');
     const sections = document.querySelectorAll('.solution-section, #stats');
 
     const observerOptions = {
         root: null,
-        rootMargin: '-20% 0px -60% 0px', /* Focuses on the middle-upper part of viewport window math */
+        rootMargin: '-20% 0px -60% 0px',
         threshold: 0
     };
 
